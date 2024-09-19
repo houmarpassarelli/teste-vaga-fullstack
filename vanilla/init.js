@@ -55,6 +55,8 @@ const validateCFPCNPJ = (payload) => {
     } else {
         //CPF Validator
 
+        let remaining;
+
         if(invalidCPFData.includes(converted)){
             return "CPF inválido!";
         }
