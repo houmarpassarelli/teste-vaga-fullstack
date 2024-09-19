@@ -180,7 +180,7 @@ const App = () => {
                   }
   
                   if(obj[header] == "vlPresta"){                    
-                      const calculate = caculateInstallments(vlTotal / qtPrestacoes)
+                      const calculate = caculateInstallments(vlTotal, qtPrestacoes)
                       obj[header] = monetaryConverter(calculate, "pt-BR");
                   } else {
                       obj[header] = monetaryConverter(value, "pt-BR");

@@ -180,7 +180,7 @@ export default defineComponent({
               }
 
               if (obj[header] == "vlPresta") {
-                const calculate = this.caculateInstallments(vlTotal / qtPrestacoes)
+                const calculate = this.caculateInstallments(vlTotal, qtPrestacoes)
                 obj[header] = this.monetaryConverter(calculate, "pt-BR");
               } else {
                 obj[header] = this.monetaryConverter(value, "pt-BR");
